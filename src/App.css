@@ -1,0 +1,19 @@
+@import "./reset.css";
+@import "./variables.css";
+
+.container {
+  align-items: center;
+  background-color: var(--grey);
+  display: flex;
+  font-family: var(--primary-font);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: var(--white);
+  border-radius: 9px;
+  min-height: 50vh;
+  padding: 1.875rem;
+  width: 400px;
+}

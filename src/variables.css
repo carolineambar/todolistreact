@@ -1,0 +1,9 @@
+:root {
+    --primary-font: 'Open Sans', sans-serif;
+    --white: #fff;
+    --grey: #f3f5fc;
+    --blue: #666f99;
+    --dark-blue: #3f455f;
+    --dark-blue-rgb: rgba(63, 69, 95, .1);
+    --shadow: rgba(211, 220, 248, .3);
+}
