@@ -1,3 +1,8 @@
+::placeholder {
+    color: var(--blue);
+    opacity: .5;
+}
+
 .title {
     background-position: 98% center;
     background-repeat: no-repeat;
@@ -18,7 +23,7 @@
 }
 
 .title:hover {
-    background-image: url('C:\Users\ambar\Projetos\todolistreact\src\assets\pencil.png');
+    background-image: url('../../assets/pencil.png');
 }
 
 .title:focus {
