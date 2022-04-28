@@ -1,7 +1,7 @@
 import React from 'react';
 //import Form from './components/Form/Form';
-//import Item from './components/Item/Item';
 import Title from './components/Title/Title';
+import List from './components/List/List';
 import './App.css';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <div class="container">
         <main class="main">
           <Title/>
+          <List/>
         </main>
       </div>
     </>
