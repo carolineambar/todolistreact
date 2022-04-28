@@ -1,5 +1,5 @@
 import React from 'react';
-//import Form from './components/Form/Form';
+import Form from './components/Form/Form'
 import Title from './components/Title/Title';
 import List from './components/List/List';
 import './App.css';
@@ -12,6 +12,7 @@ function App() {
         <main class="main">
           <Title/>
           <List/>
+          <Form/>
         </main>
       </div>
     </>
