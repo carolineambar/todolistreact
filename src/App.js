@@ -5,17 +5,28 @@ import List from './components/List/List';
 import './App.css';
 
 function App() {
+  const itemsIniciais = [
+    {
+      id:1,
+      value:'tarefa2'
+    },
+    {
+      id:2,
+      value:'tarefa3'
+    }
+  ]
+  const [items, setItems] = React.useState(itemsIniciais)
+  const addNewItem = (item) => {
+    setItems([...items, item])
+  }
   return (
-    <>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap" rel="stylesheet"/>
-      <div class="container">
-        <main class="main">
-          <Title/>
-          <List/>
-          <Form/>
-        </main>
-      </div>
-    </>
+    <div class="container">
+      <main class="main">
+        <Title/>
+        <List items={items}/>
+        <Form addNewItem={addNewItem}/>
+      </main>
+    </div>
   );
 }
 
