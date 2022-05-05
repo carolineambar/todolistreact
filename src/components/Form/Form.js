@@ -7,6 +7,7 @@ const Form = ({addNewItem}) => {
     const handleSubmit = (evento) => {
         evento.preventDefault()
         addNewItem({id:3, value})
+        setValue('')
     }
     return (
         <form onSubmit={handleSubmit} class="form">
