@@ -23,7 +23,7 @@ function App() {
     <div class="container">
       <main class="main">
         <Title/>
-        <List items={items}/>
+        <List items={items} setItems={setItems}/>
         <Form addNewItem={addNewItem}/>
       </main>
     </div>
