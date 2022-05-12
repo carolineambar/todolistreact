@@ -11,8 +11,8 @@ const List = ({items, setItems}) => {
     return (
         <ul>
             {
-                items.map((item, index) => (
-                    <Item key={index} handleDelete={handleDelete} value={item.value} id={item.id}/>
+                items.map((item) => (
+                    <Item key={item.id} handleDelete={handleDelete} value={item.value} id={item.id}/>
                 ))
             }
         </ul>
