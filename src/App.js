@@ -3,25 +3,23 @@ import Form from './components/Form/Form'
 import Title from './components/Title/Title';
 import List from './components/List/List';
 import './App.css';
+import { getItems } from './api/config';
 
 function App() {
-  const itemsIniciais = [
-    {
-      id:1,
-      value:'tarefa2'
-    },
-    {
-      id:2,
-      value:'tarefa3'
-    }
-  ]
-  const [items, setItems] = React.useState(itemsIniciais)
+  const [items, setItems] = React.useState([])
   const addNewItem = (item) => {
     setItems([...items, item])
   }
+  const loadItems = async () => {
+    const data = await getItems()
+    setItems(data)
+  }
+  React.useEffect (() => {
+    loadItems()
+  }, [])
   return (
-    <div class="container">
-      <main class="main">
+    <div className="container">
+      <main className="main">
         <Title/>
         <List items={items} setItems={setItems}/>
         <Form addNewItem={addNewItem}/>
