@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# To Do List com ReactJS
+
+Nesse projeto utilizei o mesmo To Do List de um projeto anterior: https://github.com/carolineambar/todolist, porém com a biblioteca ReactJS para as funcionalidades com o intuito de aprender e aplicar o que aprendi sobre essa tecnologia. Abaixo segue as instruções para rodar a aplicação:
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
