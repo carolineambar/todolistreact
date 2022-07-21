@@ -1,74 +1,108 @@
 # To Do List com ReactJS
 
-Nesse projeto utilizei o mesmo To Do List de um projeto anterior: https://github.com/carolineambar/todolist, porém com a biblioteca ReactJS para as funcionalidades com o intuito de aprender e aplicar o que aprendi sobre essa tecnologia. Abaixo segue as instruções para rodar a aplicação:
+## Descrição do projeto
 
-## Getting Started with Create React App
+Nesse projeto utilizei o mesmo To Do List de um projeto anterior: https://github.com/carolineambar/todolist, porém com a biblioteca ReactJS para as funcionalidades com o intuito de aprender e aplicar o que aprendi sobre essa tecnologia. Abaixo segue as instruções para rodar a aplicação onde será necessário rodar no seu terminal o JSONServer como servidor e o React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tecnologias usadas:
 
-## Available Scripts
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="40" height="40" />
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Esse projeto foi criado com React [Create React App] (https://github.com/facebook/create-react-app).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Começando com React
 
-### `npm test`
+Você precisa ter [NPM](https://nodejs.org/en/) ou [Yarn](https://yarnpkg.com/pt-BR/) instalado para rodar essa aplicação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Clone esse projeto
 
-### `npm run build`
+```
+  git clone https://github.com/carolineambar/todolistreact
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Entre na pasta
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+  cd todolistreact
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Instale dependencias
 
-### `npm run eject`
+```
+  yarn
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+or
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+  npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Para rodar!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+  yarn start
+```
 
-## Learn More
+or
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+  npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Começando com JSON Server 
 
-### Code Splitting
+Para rodar o projeto em sua máquina é necessário utilizar um servidor, como sugestão poderá utilizar o Json Server. Abaixo segue as instruções para instalar e iniciar o Json Server a partir do seu terminal para rodar a aplicação:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install JSON Server
 
-### Analyzing the Bundle Size
+```
+npm install -g json-server
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Create a db.json file with some data
 
-### Making a Progressive Web App
+```
+{
+  "notes": [
+    {
+      "value": "Tarefa 1",
+      "id": 1
+    },
+    {
+      "value": "Tarefa 2",
+      "id": 2
+    }
+  ]
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start JSON Server
 
-### Advanced Configuration
+```
+json-server --watch db.json
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Now if you go to http://localhost:3000/notes, you'll get
 
-### Deployment
+```
+[
+  {
+    "value": "Tarefa 1",
+    "id": 1
+  },
+  {
+    "value": "Tarefa 2",
+    "id": 2
+  }
+]
+```
+## Estrutura do projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Futuras melhorias 
+
+Atualmente para rodar o projeto é necessário rodar um servidor em sua máquina, como o JSON Server, porém como futura melhoria irei desenvolver o BackEnd desse projeto.
