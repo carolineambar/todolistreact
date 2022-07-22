@@ -101,7 +101,7 @@ Now if you go to http://localhost:3000/notes, you'll get
 ```
 ## Estrutura do projeto
 
-```
+```shell
 |-- public
 |---- favicon.ico
 |---- index.html
@@ -134,12 +134,14 @@ Now if you go to http://localhost:3000/notes, you'll get
 |---- logo.svg
 |---- reset.css
 |---- variables.css
-|-- .gitignore
-|-- README.md
 |-- db.json
 |-- package-lock.json
 |-- package.json
 ```
+
+Na pasta ```public``` estão as configurações do React.
+Na pasta ```src``` estão as pastas de ```api``` onde está as configurações do backend, a ```assets``` onde estão os ícones utilizados nos botões e ```components``` onde estão os componentes da aplicação subdivididos com documentos js para funcionalidade e css para os estilos além dos arquivos de configurações de estilo, funcionalidade e o arquivo ```App.js``` onde ficou a aplicação principal.
+Os demais arquivos são de configuração do Servidor como o ```db.json```.
 
 ## Futuras melhorias 
 
