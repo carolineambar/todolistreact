@@ -12,46 +12,6 @@ Nesse projeto utilizei o mesmo To Do List de um projeto anterior: https://github
 
 Esse projeto foi criado com React [Create React App] (https://github.com/facebook/create-react-app).
 
-## Começando com React
-
-Você precisa ter [NPM](https://nodejs.org/en/) ou [Yarn](https://yarnpkg.com/pt-BR/) instalado para rodar essa aplicação.
-
-#### Clone esse projeto
-
-```
-  git clone https://github.com/carolineambar/todolistreact
-```
-
-#### Entre na pasta
-
-```
-  cd todolistreact
-```
-
-#### Instale dependencias
-
-```
-  yarn
-```
-
-or
-
-```
-  npm install
-```
-
-#### Para rodar!
-
-```
-  yarn start
-```
-
-or
-
-```
-  npm start
-```
-
 ## Começando com JSON Server 
 
 Para rodar o projeto em sua máquina é necessário utilizar um servidor, como sugestão poderá utilizar o Json Server. Abaixo segue as instruções para instalar e iniciar o Json Server a partir do seu terminal para rodar a aplicação:
@@ -99,6 +59,47 @@ Now if you go to http://localhost:3000/notes, you'll get
   }
 ]
 ```
+
+## Começando com React
+
+Você precisa ter [NPM](https://nodejs.org/en/) ou [Yarn](https://yarnpkg.com/pt-BR/) instalado para rodar essa aplicação.
+
+#### Clone esse projeto
+
+```
+  git clone https://github.com/carolineambar/todolistreact
+```
+
+#### Entre na pasta
+
+```
+  cd todolistreact
+```
+
+#### Instale dependencias
+
+```
+  yarn
+```
+
+or
+
+```
+  npm install
+```
+
+#### Para rodar!
+
+```
+  yarn start
+```
+
+or
+
+```
+  npm start
+```
+
 ## Estrutura do projeto
 
 ```shell
