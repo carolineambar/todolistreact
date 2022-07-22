@@ -101,7 +101,45 @@ Now if you go to http://localhost:3000/notes, you'll get
 ```
 ## Estrutura do projeto
 
-
+```
+|-- public
+|---- favicon.ico
+|---- index.html
+|---- logo192.png
+|---- logo512.png
+|---- manifest.json
+|---- robots.txt
+|-- src
+|---- api
+|------ config.js
+|---- assets
+|------ pencil.png
+|------ plus.png
+|------ trash.png
+|---- components
+|------ Form
+|-------- Form.css
+|-------- Form.js
+|------ Item
+|-------- Item.css
+|-------- Item.js
+|------ List
+|-------- List.js
+|------ Title
+|-------- Title.css
+|-------- Title.js
+|---- App.css
+|---- App.js
+|---- index.js
+|---- logo.svg
+|---- reset.css
+|---- variables.css
+|-- .gitignore
+|-- README.md
+|-- db.json
+|-- package-lock.json
+|-- package.json
+```
 
 ## Futuras melhorias 
 
